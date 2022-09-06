@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Transition and Effects in CSS</title>
+        <style type="text/css">
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            transition-duration: 5s;
+            transition-property: background;
+            transition-timing-function: ease-out;
+        }
+        .box:hover{
+            background: pink;
+            transform: rotate(45deg);
+        }
+        </style>
+    <body>
+        <div class="box"></div>
+    </body>
+    </head>
+</html>

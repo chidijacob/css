@@ -1,0 +1,46 @@
+body{
+    background-image: url(image_1.webp);
+    margin-right: auto;
+    background-color: #8DB5ED;
+    background-blend-mode: screen;
+}
+
+.tr{
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+    height: 60%;
+    width: 60%;
+    background-color: purple;
+    position: absolute;
+    z-index: -1;
+}
+
+@keyframes blink{
+    0%{
+        background: indigo;
+    }
+    25%{
+        background: red;
+    }
+    50%{
+        background: yellow;
+    }
+    75%{
+        background: green;
+    }
+   100%{
+        background: blue;
+    }
+}
+
+div{
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+    animation: blink 2s infinite;
+    -webkit-animation: blink 2s infinite;
+}
+html{
+    height: 100%;
+    background: rgb(36,0,1);
+    background: radial-gradient(circle, rgba(36,0,1,0.4430147058823529) 3%, rgba(9,9,121,1) 14%, rgba(0,212,255,1) 33%, rgba(255,0,39,1) 48%);
+}
